@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html lang="en" dir="ltr">
   <head>
+    <title>
+      Insecure password example
+    </title>
   </head>
   <body>
     <form action="." method="get">
+      <b>Insecure password example</b><br />
       Pretend Username: <input name=username type=text><br />
       Pretend Password: <input name=password type=password><br />
+      HTTP Method: <select onchange="this.form.method = this.value;">
+                     <option>GET</option>
+                     <option>POST</option>
+                   </select><br />
       <input type="submit" value="Submit"><br />
     </form>
   </body>
